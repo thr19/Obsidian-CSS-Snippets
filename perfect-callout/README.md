@@ -14,7 +14,7 @@ Elevate your Obsidian notes with a perfectly crafted set of custom callouts for 
 
 The images below illustrate the appearance and functionality of custom callouts in a standard Obsidian vault.
 
-![image](https://github.com/thr19/obsidian-css-snippets/blob/main/perfect-callout/examples/example.jpg?raw=true)
+![image](https://github.com/thr19/obsidian-css-snippets/blob/master/perfect-callout/examples/example.jpg?raw=true)
 
 
 ## How to use:

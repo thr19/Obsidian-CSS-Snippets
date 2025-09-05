@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Perfect Tables Snippet
+   - Styles standard markdown tables for improved readability
+   ========================================================================== */
+
+/* --- General Table Styling --- */
+/* Set the table width to 100% of the container for full use of space */
+.markdown-source-view.mod-cm6 table,
+.markdown-rendered table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Add padding and subtle borders to table headers and cells */
+.markdown-source-view.mod-cm6 th,
+.markdown-rendered th,
+.markdown-source-view.mod-cm6 td,
+.markdown-rendered td {
+    padding: 12px 15px;
+    border: none;
+}
+
+/* Style the table header */
+.markdown-source-view.mod-cm6 thead tr,
+.markdown-rendered thead tr {
+    background-color: var(--background-modifier-accent);
+    color: var(--text-on-accent);
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Add zebra-striping for better readability */
+.markdown-source-view.mod-cm6 tbody tr:nth-of-type(even),
+.markdown-rendered tbody tr:nth-of-type(even) {
+    background-color: var(--background-modifier-box-shadow);
+}
+
+/* Add a subtle bottom border to separate rows */
+.markdown-source-view.mod-cm6 tbody tr,
+.markdown-rendered tbody tr {
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* Style the very last row for a definitive end to the table */
+.markdown-source-view.mod-cm6 tbody tr:last-of-type,
+.markdown-rendered tbody tr:last-of-type {
+    border-bottom: 2px solid var(--interactive-accent);
+}
+
+/* Add a hover effect to highlight the row the cursor is over */
+.markdown-source-view.mod-cm6 tbody tr:hover,
+.markdown-rendered tbody tr:hover {
+    background-color: var(--background-modifier-hover);
+    cursor: pointer;
+    transform: scale(1.005);
+    box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.2);
+}
