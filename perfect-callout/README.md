@@ -1,19 +1,33 @@
-HTU&HIW:
+# Perfect Callouts for Obsidian
 
-![image](/examples/1 - 0001.jpg)
-![image](/examples/1 - 0001.jpg)
-![image](/examples/1 - 0002.jpg)
-![image](/examples/1 - 0003.jpg)
-![image](/examples/1 - 0004.jpg)
-![image](/examples/1 - 0005.jpg)
-![image](/examples/1 - 0006.jpg)
-![image](/examples/1 - 0007.jpg)
-![image](/examples/1 - 0008.jpg)
-![image](/examples/1 - 0009.jpg)
-![image](/examples/1 - 0010.jpg)
-![image](/examples/1 - 0011.jpg)
-![image](/examples/1 - 0012.jpg)
-![image](/examples/1 - 0013.jpg)
+Elevate your Obsidian notes with a perfectly crafted set of custom callouts for mathematical and academic writing. This CSS snippet provides a clean, elegant, and visually distinct style for a wide range of academic block types, including theorems, definitions, axioms, and more.
+
+## Features
+
+-   **Visually Perfect Design:** Uses a modern, clean, and consistent design language with gentle rounded corners, subtle shadows, and clear visual hierarchy.
+-   **Clear Colour-Coding:** Each callout type is assigned a distinct, muted colour, making it easy to identify at a glance.
+-   **Native Icons:** Integrates seamlessly with Obsidian's native Lucide icons for robust and consistent icon display, without relying on external plugins for icon injection.
+-   **Easy to Use:** The callout types can be created with a simple Markdown syntax, directly inside any blockquote.
+-   **Extensive Support:** Includes custom styles for 14 academic and organisational callout types out of the box.
+
+## How it works:
+
+The images below illustrate the appearance and functionality of custom callouts in a standard Obsidian vault.
+
+![image](https://github.com/thr19/obsidian-css-snippets/blob/main/perfect-callout/examples/example.jpg?raw=true)
+
+
+## How to use:
+
+### Installation
+
+1.  **Open Snippets Folder**: In Obsidian, navigate to **Settings > Appearance**. Under the "CSS snippets" section, click the folder icon to open the snippets directory.
+2.  **Add the Snippet**: Download the `perfect-callouts.css` file from this repository and place it in the snippets folder you just opened.
+3.  **Enable the Snippet**: Return to the **Appearance** settings in Obsidian, click the "Reload snippets" button (the refresh icon), and toggle the `perfect-callouts` snippet on.
+
+### Markdown Syntax
+
+Use the following syntax in your notes. The callout type is case-insensitive.
 
 ```markdown
 > [!theorem] The Pythagorean Theorem
@@ -58,5 +72,3 @@ HTU&HIW:
 
 > [!reference] Source for this content
 > See *Elements of Set Theory* by Herbert B. Enderton, section 3.2.
->
-
