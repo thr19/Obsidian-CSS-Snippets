@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Icon-Enhanced Table Style (for use with Iconize plugin)
+   - Requires Iconize plugin to be installed.
+   - Use `cssclass: icons-table` in your note's frontmatter.
+   ========================================================================== */
+
+/* Center table cells that contain icons for better alignment */
+.icons-table .markdown-rendered tbody td:has(.iconize-icon),
+.icons-table .markdown-source-view.mod-cm6 tbody td:has(.iconize-icon) {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Make the icons slightly larger and adjust spacing */
+.icons-table .markdown-rendered .iconize-icon,
+.icons-table .markdown-source-view.mod-cm6 .iconize-icon {
+    width: 1.2em;
+    height: 1.2em;
+    font-size: 1.2em;
+    margin: 0;
+    vertical-align: middle;
+    /* This ensures inline icons are perfectly centered */
+}
+
+/* Optional: Add a different background color for cells with icons */
+.icons-table .markdown-rendered tbody td:has(.iconize-icon),
+.icons-table .markdown-source-view.mod-cm6 tbody td:has(.iconize-icon) {
+    background-color: var(--background-modifier-box-shadow);
+}
+
+/* Optional: Define specific styling for different icon types (e.g., status) */
+/* Example: Green background for a check icon */
+.icons-table .markdown-rendered .iconize-icon[data-iconize-icon="fa-solid-check-circle"]::before,
+.icons-table .markdown-source-view.mod-cm6 .iconize-icon[data-iconize-icon="fa-solid-check-circle"]::before {
+    color: var(--color-green);
+}
+
+/* Example: Red background for a cross icon */
+.icons-table .markdown-rendered .iconize-icon[data-iconize-icon="fa-solid-times-circle"]::before,
+.icons-table .markdown-source-view.mod-cm6 .iconize-icon[data-iconize-icon="fa-solid-times-circle"]::before {
+    color: var(--color-red);
+}
+
+/* Example: Yellow background for a question icon */
+.icons-table .markdown-rendered .iconize-icon[data-iconize-icon="fa-solid-question-circle"]::before,
+.icons-table .markdown-source-view.mod-cm6 .iconize-icon[data-iconize-icon="fa-solid-question-circle"]::before {
+    color: var(--color-yellow);
+}
+
+/* General style for the Iconize-created `<span>` element */
+.icons-table .markdown-rendered .iconize-icon,
+.icons-table .markdown-source-view.mod-cm6 .iconize-icon {
+    /* ... your specific adjustments here ... */
+}
+/* ==========================================================================
+   End of Icon-Enhanced Table Style
+   ========================================================================== */

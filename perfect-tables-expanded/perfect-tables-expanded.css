@@ -140,7 +140,7 @@
 
 /* --- 5. Icon-Enhanced Table (Requires Iconize Plugin) --- */
 /* Adds icons to specific cells based on content, useful for status tracking. */
-/* You will need to create the `icons-table.css` snippet separately. */
+/* Create the `icons-table.css` snippet separately. */
 .icons-table .markdown-rendered tbody td:has(.iconize-icon),
 .icons-table .markdown-source-view.mod-cm6 tbody td:has(.iconize-icon) {
     text-align: center;
