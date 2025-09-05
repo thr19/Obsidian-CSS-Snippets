@@ -1,0 +1,136 @@
+/* ==========================================================================
+    CSS Snippet for Visually Perfect Math and Note Callouts - Designed for use with the Iconize plugin
+    UPDATED CSS Snippet for Custom Callout Icons (using reliable Lucide icons)
+   ========================================================================== */
+
+/* --- General Callout Styling --- */
+.callout {
+    --callout-padding: 1.5em;
+    --callout-border-width: 0px 0px 0px 5px;
+    border-radius: 8px;
+    margin: 1.5em 0;
+    border-style: solid;
+    border-color: rgba(var(--callout-color), 0.5);
+    background-color: rgba(var(--callout-color), 0.05);
+    box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+/* --- Callout Header Styling --- */
+.callout .callout-title {
+    padding: 0;
+    margin-bottom: 0.5em;
+}
+
+.callout .callout-title-inner {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.95em;
+    letter-spacing: 1px;
+}
+
+.callout .callout-title .iconize-icon,
+.callout .callout-title-inner .callout-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5em;
+}
+
+/* Align the callout title and content perfectly */
+.callout .callout-title-inner {
+    display: flex;
+    align-items: center;
+}
+
+.callout .callout-content {
+    padding-top: 0;
+    padding-left: calc(var(--callout-padding) + 1.25em);
+    margin-top: -1em;
+}
+
+/* --- Individual Callout Definitions (now using reliable Lucide icons) --- */
+
+/* Theorem */
+.callout[data-callout="theorem"] {
+    --callout-color: 77, 107, 143;
+    --callout-icon: "sigma"; /* A reliable icon for mathematical concepts */
+}
+
+/* Definition */
+.callout[data-callout="definition"] {
+    --callout-color: 77, 143, 90;
+    --callout-icon: "book"; /* A standard icon for definitions */
+}
+
+/* Lemma */
+.callout[data-callout="lemma"] {
+    --callout-color: 143, 77, 77;
+    --callout-icon: "list-ordered"; /* Orderly icon for a sequenced proof element */
+}
+
+/* Proposition */
+.callout[data-callout="proposition"] {
+    --callout-color: 107, 77, 143;
+    --callout-icon: "lightbulb"; /* Standard idea icon */
+}
+
+/* Corollary */
+.callout[data-callout="corollary"] {
+    --callout-color: 143, 114, 77;
+    --callout-icon: "paperclip"; /* Implies a reference or attachment to a previous proof */
+}
+
+/* Claim */
+.callout[data-callout="claim"] {
+    --callout-color: 143, 77, 143;
+    --callout-icon: "flag"; /* A flag for a stated claim */
+}
+
+/* Axiom */
+.callout[data-callout="axiom"] {
+    --callout-color: 77, 143, 143;
+    --callout-icon: "square-equal"; /* Represents a foundational equality or truth */
+}
+
+/* Assumption */
+.callout[data-callout="assumption"] {
+    --callout-color: 143, 77, 107;
+    --callout-icon: "check-check"; /* A double-check for an assumed truth */
+}
+
+/* Exercise */
+.callout[data-callout="exercise"] {
+    --callout-color: 143, 143, 77;
+    --callout-icon: "pencil"; /* A classic symbol for writing or an exercise */
+}
+
+/* Example */
+.callout[data-callout="example"] {
+    --callout-color: 107, 143, 77;
+    --callout-icon: "flask-conical"; /* A beaker or flask for an example or experiment */
+}
+
+/* Conjecture */
+.callout[data-callout="conjecture"] {
+    --callout-color: 143, 107, 77;
+    --callout-icon: "help-circle"; /* A question mark for an unproven conjecture */
+}
+
+/* Hypothesis */
+.callout[data-callout="hypothesis"] {
+    --callout-color: 77, 107, 143;
+    --callout-icon: "cloud"; /* A cloud or idea bubble */
+}
+
+/* Remark */
+.callout[data-callout="remark"] {
+    --callout-color: 143, 143, 143;
+    --callout-icon: "message-square"; /* A message or remark */
+}
+
+/* Reference */
+.callout[data-callout="reference"] {
+    --callout-color: 107, 143, 143;
+    --callout-icon: "bookmark"; /* A bookmark for a reference */
+}
